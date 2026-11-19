@@ -83,7 +83,6 @@ export default function CreateEventPage() {
       setLoading(false); 
     }
   };
-
   if (isPending || !user) {
     return (
       <>
@@ -92,7 +91,6 @@ export default function CreateEventPage() {
       </>
     );
   }
-
   return (
     <>
       <Toaster position="top-center" toastOptions={{ style: { background: "#04353A", color: "#fff", fontSize: "14px" } }} />
