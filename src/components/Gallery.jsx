@@ -1,4 +1,4 @@
-// Static photos of community work (Unsplash, free licence)
+
 const PHOTOS = [
   {
     src: "https://unsplash.com/photos/kylBMLIliWM/download?force=true&w=1000",
@@ -37,7 +37,6 @@ const PHOTOS = [
     span: "md:col-span-2",
   },
 ];
-
 export default function Gallery() {
   return (
     <section id="gallery" className="scroll-mt-20 bg-[var(--surface)]">
@@ -53,7 +52,6 @@ export default function Gallery() {
             Real people giving their time. These are the moments DevSphere helps bring together.
           </p>
         </div>
-
         <div className="mt-12 grid auto-rows-[220px] grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
           {PHOTOS.map((p) => (
             <figure
