@@ -66,7 +66,6 @@ export default function Hero() {
         <div className="absolute -right-32 top-20 h-[380px] w-[380px] rounded-full bg-[#F28C1B]/10 blur-3xl" />
         <div className="absolute inset-0 [background-image:radial-gradient(var(--line)_1px,transparent_1px)] [background-size:22px_22px] [mask-image:linear-gradient(to_bottom,black,transparent_75%)]" />
       </div>
-
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 md:py-24 lg:grid-cols-[1.1fr_0.9fr]">
         {/* Text + buttons + stats */}
         <div>
@@ -74,16 +73,13 @@ export default function Hero() {
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
             Social development events near you
           </span>
-
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-[var(--ink)] sm:text-5xl lg:text-[56px]">
             Good work happens when people{" "}
             <span className="text-[var(--brand-text)]">find each other.</span>
           </h1>
-
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
             DevSphere connects you with community events in your area, so good intentions turn into visible action.
           </p>
-
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
               href="/events"
@@ -101,7 +97,6 @@ export default function Hero() {
               Create an Event
             </Link>
           </div>
-
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {STATS.map((s) => (
               <div key={s.label} className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] px-4 py-5 shadow-sm">
@@ -111,7 +106,6 @@ export default function Hero() {
             ))}
           </div>
         </div>
-
         {/* Art */}
         <div className="relative mx-auto w-full max-w-[460px] lg:max-w-none">
           <div aria-hidden="true" className="absolute inset-8 rounded-full bg-[#1B8F3F]/15 blur-2xl" />
