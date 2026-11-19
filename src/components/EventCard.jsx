@@ -31,7 +31,6 @@ export default function EventCard({ event }) {
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
         {/* Event type */}
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[#0F6B3A] shadow-sm backdrop-blur">
           {event.eventType}
@@ -48,7 +47,6 @@ export default function EventCard({ event }) {
           {joined} {joined === 1 ? "volunteer" : "volunteers"} joined
         </span>
       </div>
-
       {/* Body */}
       <div className="flex flex-1 flex-col p-5">
         <h3 className="line-clamp-2 text-lg font-bold leading-snug text-[var(--ink)]">{event.title}</h3>
@@ -69,7 +67,6 @@ export default function EventCard({ event }) {
             {time}
           </p>
         </div>
-
         {/* Organizer + button */}
         <div className="mt-auto flex items-center justify-between gap-3 border-t border-[var(--line)] pt-4 mt-5">
           <div className="flex min-w-0 items-center gap-2.5">
@@ -81,7 +78,6 @@ export default function EventCard({ event }) {
               <p className="truncate text-sm font-semibold text-[var(--ink)]">{organizer}</p>
             </div>
           </div>
-
           <Link
             href={`/events/${event._id}`}
             className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-[var(--brand)] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[var(--brand-hover)]"
