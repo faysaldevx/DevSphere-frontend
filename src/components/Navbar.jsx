@@ -155,7 +155,6 @@ export default function Navbar() {
             </Link>
           )}
         </div>
-
         {/* Mobile: theme toggle + menu button */}
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
@@ -172,7 +171,6 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
-
       {/* Mobile panel */}
       {mobileOpen && (
         <div className="border-t border-slate-200 bg-white px-5 pb-5 pt-3 md:hidden">
@@ -189,7 +187,6 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-
           {!isPending && user && (
             <div className="mt-3 border-t border-slate-100 pt-3">
               <div className="flex items-center gap-2.5 px-3 pb-2">
@@ -211,7 +208,6 @@ export default function Navbar() {
               </ul>
             </div>
           )}
-
           <div className="mt-4 border-t border-slate-100 pt-4">
             {isPending ? null : user ? (
               <button onClick={logout} className={`${ghostBtn} w-full border border-slate-300`}>
