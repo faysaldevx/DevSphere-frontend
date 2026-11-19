@@ -111,7 +111,6 @@ export default function CreateEventPage() {
               Fill in the details below. The preview shows exactly how people will see your event.
             </p>
           </div>
-
           <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_340px]">
             {/* Form */}
             <section className="rounded-3xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-sm sm:p-8">
@@ -123,12 +122,10 @@ export default function CreateEventPage() {
                 onValuesChange={setPreview}
               />
             </section>
-
             {/* Preview + organizer */}
             <aside className="space-y-5 lg:sticky lg:top-24 lg:h-fit">
               <p className="text-xs font-semibold uppercase tracking-wider text-[var(--muted)]">Live preview</p>
               <PreviewCard values={preview} user={user} />
-
               <div className="flex items-center gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4">
                 {user.image ? (
                   <img src={user.image} alt="" referrerPolicy="no-referrer" className="h-10 w-10 rounded-full object-cover" />
