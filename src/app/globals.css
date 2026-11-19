@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Cambria */
+@theme {
+  --font-sans: Cambria, "Cambria Math", Georgia, "Times New Roman", serif;
+  --default-font-family: Cambria, "Cambria Math", Georgia, "Times New Roman", serif;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Day mode colours ---------- */
+:root {
+  --page: #f6f8f7;      /* page background */
+  --surface: #ffffff;   /* cards */
+  --soft: #e3f3ec;      /* hero fade (top colour) */
+  --ink: #0f2a2e;       /* headings / main text */
+  --muted: #5a6b6e;     /* paragraphs */
+  --line: #dde6e3;      /* borders */
+  --brand: #1b8f3f;     /* main green button */
+  --brand-hover: #157a34;
+  --brand-text: #1b8f3f;
+  --accent: #e07d10;    /* orange */
+}
+
+/* ---------- Night mode colours ---------- */
+.dark {
+  --page: #0b1416;
+  --surface: #121e21;
+  --soft: #0f2c28;
+  --ink: #e6efed;
+  --muted: #9aaeaa;
+  --line: #22353a;
+  --brand: #1f9d4a;
+  --brand-hover: #25b356;
+  --brand-text: #3ccf82;
+  --accent: #f59b3a;
+}
+
+html { color-scheme: light; }
+html.dark { color-scheme: dark; }
+
+body {
+  background-color: var(--page);
+  color: var(--ink);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+/* ---------- Night mode for the other pages (navbar, events, forms) ---------- */
+.dark .bg-white { background-color: var(--surface); }
+.dark .bg-slate-50,
+.dark .bg-slate-100 { background-color: var(--surface); }
+.dark .bg-slate-200 { background-color: var(--line); }
+.dark .bg-\[\#f7faf8\] { background-color: var(--page); }
+.dark .bg-\[\#e7f4ea\] { background-color: rgb(27 143 63 / 0.2); }
+.dark .bg-white\/90 { background-color: rgb(18 30 33 / 0.9); }
+.dark .hover\:bg-slate-50:hover,
+.dark .hover\:bg-slate-100:hover { background-color: rgb(255 255 255 / 0.06); }
+
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700,
+.dark .text-\[\#04353A\] { color: var(--ink); }
+.dark .text-slate-600,
+.dark .text-slate-500,
+.dark .text-slate-400 { color: var(--muted); }
+.dark .text-\[\#1B8F3F\],
+.dark .hover\:text-\[\#1B8F3F\]:hover { color: var(--brand-text); }
+
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-200\/80,
+.dark .border-slate-300,
+.dark .divide-slate-200 > * { border-color: var(--line); } 
+html,
+body {
+  font-family: Cambria, "Cambria Math", Georgia, "Times New Roman", serif !important;
+}
