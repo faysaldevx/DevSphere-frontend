@@ -16,7 +16,6 @@ export default function UpcomingEvents() {
       .catch(() => setFailed(true))
       .finally(() => setLoading(false));
   }, []);
-
   return (
     <section id="upcoming" className="scroll-mt-20 bg-[var(--page)]">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
